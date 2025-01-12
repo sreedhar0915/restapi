@@ -61,8 +61,8 @@ class _HomescreenState extends State<Homescreen> {
                                     builder: (context) => Productscreen(
                                         name: value.productlist[index].name
                                             .toString(),
-                                        year: "\$ 1849.9", // value.productlist,
-                                        price: "dhs"),
+                                        year: "2019", // value.productlist,
+                                        price: "\$ 1849.9"),
                                   ));
                             },
                             child: Productcard(

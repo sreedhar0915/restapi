@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:restapi/controller/Homescreen_controller.dart';
+import 'package:restapi/controller/productscreen_controller.dart';
 import 'package:restapi/view/Homescreen/homescreen.dart';
 
 void main() {
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => HomescreenController(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ProductscreenController(),
         )
       ],
       child: MaterialApp(
